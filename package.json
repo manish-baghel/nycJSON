@@ -1,0 +1,17 @@
+{
+  "name": "nyc-plugin",
+  "version": "1.0.0",
+  "description": "nyc cli plugin on top of istanbul to fetch data of failed test cases and line numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "keywords": [
+    "istanbul",
+    "nyc",
+    "mocha",
+    "nodejs"
+  ],
+  "author": "manish-baghel",
+  "license": "MIT"
+}
