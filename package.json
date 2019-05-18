@@ -2,9 +2,10 @@
   "name": "nyc-plugin",
   "version": "1.0.0",
   "description": "nyc cli plugin on top of istanbul to fetch data of failed test cases and line numbers",
+  "repository": "https://github.com/manish-baghel/nycJSON.git",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "nyc --reporter=html --reporter=text --reporter=json-summary --reporter=json mocha"
   },
   "keywords": [
     "istanbul",
@@ -13,5 +14,11 @@
     "nodejs"
   ],
   "author": "manish-baghel",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
+  }
 }
